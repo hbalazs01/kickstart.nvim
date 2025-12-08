@@ -217,6 +217,8 @@ return {
           end,
         },
       }
+      vim.lsp.config('gdscript', { capabilities = capabilities })
+      vim.lsp.enable 'gdscript'
     end,
   },
 }

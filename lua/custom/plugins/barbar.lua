@@ -7,8 +7,8 @@ return {
     },
     init = function()
       vim.g.barbar_auto_setup = false
-      vim.api.nvim_set_keymap('n', '<Tab>', '<Cmd>BufferNext<CR>', { noremap = true, silent = true })
-      vim.api.nvim_set_keymap('n', '<S-Tab>', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true })
+      vim.api.nvim_set_keymap('n', '<A-l>', '<Cmd>BufferNext<CR>', { noremap = true, silent = true })
+      vim.api.nvim_set_keymap('n', '<A-h>', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true })
       vim.api.nvim_set_keymap('n', '<A-,>', '<Cmd>BufferMovePrevious<CR>', { noremap = true, silent = true })
       vim.api.nvim_set_keymap('n', '<A-.>', '<Cmd>BufferMoveNext<CR>', { noremap = true, silent = true })
       vim.api.nvim_set_keymap('n', '<A-c>', '<Cmd>BufferClose<CR>', { noremap = true, silent = true })

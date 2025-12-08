@@ -1,6 +1,11 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+local projectfile = vim.fn.getcwd() .. '/project.godot'
+if projectfile then
+  vim.fn.serverstart './godothost'
+end
+
 vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
